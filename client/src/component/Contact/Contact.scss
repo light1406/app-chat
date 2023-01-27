@@ -1,0 +1,58 @@
+.contact {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: 1s;
+
+    &:hover {
+        background-color: rgb(229, 229, 229);
+    }
+
+    .contact-left {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contact-left__avt {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(150, 150, 150, 0.5);
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .contact-right {
+        width: 100%;
+
+        .contact-right__top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .contact-right__top--name {
+                font-weight: bold;
+            }
+
+            .contact-right__top--time {
+                color: rgb(158, 158, 158);
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .contact-right__bottom {
+        .contact-right__bottom--lastMsg {
+            color: rgb(140, 140, 140);
+            font-size: 0.9rem;
+        }
+    }
+}
